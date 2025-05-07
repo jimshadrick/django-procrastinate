@@ -1,0 +1,116 @@
+# Django .gitignore
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# UV package manager
+uv.lock
+.uv_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Ignore all .env files
+.env*
+
+# Media files
+/media/
+
+# Collected static files (for production)
+/staticfiles/
+/static/dist/
+
+# But DO NOT ignore the /static/ directory itself
+# /static/
+
+# Ignore Bootstrap minified files 
+static/vendor/bootstrap/*
+!static/vendor/bootstrap/.gitkeep
+
+# Django dump files
+*.jsonl
+*.yaml
+
+# Database files
+*.sqlite3
+*.db
+*.frm
+*.ibd
+
+# Local settings
+settings_local.py
+local_settings.py
+
+# Logs and localization files
+*.log
+*.pot
+
+# Backup files
+*.bak
+
+# Pyenv
+.python-version
+
+# Celery
+celerybeat-schedule.*
+
+# IDEs
+## PyCharm
+.idea/
+*.iws
+out/
+
+## Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+## JIRA plugin
+atlassian-ide-plugin.xml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Package directories
+node_modules/
+dist
+.cache
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Other
+*.swp
+*.swo

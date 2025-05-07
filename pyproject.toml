@@ -1,0 +1,13 @@
+[project]
+name = "django-procrastinate"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django>=5.2",
+    "environs[django]>=14.1.1",
+    "faker>=37.1.0",
+    "procrastinate[django]>=3.1.0",
+    "psycopg[binary]>=3.2.7",
+]
