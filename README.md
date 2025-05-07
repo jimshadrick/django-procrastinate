@@ -126,7 +126,7 @@ You can view the procrastinate jobs through the Django admin portal at:
 Note: Make sure your `media` directory is properly configured and accessible. The project uses Django's default file
 storage system with the following settings:
 
-```python
+```
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 ```
